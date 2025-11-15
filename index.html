@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Закрывающий тег</title>
+    <title>Tasty Coffee в жестяных банках</title>
+    <meta name="description" content="Петиция за производство молотого кофе Tasty Coffee в жестяных банках. Присоединяйтесь к движению за качество и экологию!">
     <link rel="icon" href="./images/favicon.ico" sizes="any">
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./images/favicon.png">
@@ -16,37 +17,50 @@
   <body class="page">
     <header class="header">
       <div class="logo__group">
-        <span class="header__logo">&lt;/html&gt;</span>
-        <h1 class="header__title">закрывающий тег</h1>
+        <span class="header__logo">☕ TASTY</span>
+        <h1 class="header__title">Кофе в жестяных банках</h1>
+        <p class="header__subtitle">Петиция для Tasty Coffee</p>
       </div>
     </header>
     <main class="content-width">
+      <!-- Вступительная секция -->
+      <section class="intro-section">
+        <h2 class="intro__title">Почему жестяные банки?</h2>
+        <p class="intro__text">
+          Мы любим Tasty Coffee за качество, свежесть и внимание к деталям. 
+          Но есть одна вещь, которая могла бы сделать ваш кофе ещё лучше — 
+          упаковка в жестяные банки для молотого кофе. Это не просто прихоть, 
+          это забота о вкусе, аромате и нашей планете.
+        </p>
+      </section>
+
       <article class="card">
         <h2 class="card__title">
-          Фритрек и нулевой спринт: Подготовка к работе
+          Максимальная сохранность аромата
         </h2>
         <div class="card__image-container">
           <img 
-          src="./images/photo-1.jpg" 
-          alt="Красавчик" 
+          src="./images/coffee-1.jpeg" 
+          alt="Свежий ароматный кофе" 
           class="card__image filter-brightness-contrast" 
           loading="lazy"
           >
-          <p class="card__watermark">&lt;/html&gt;</p>
+          <p class="card__watermark">TASTY</p>
         </div>
         <div class="card__content">
           <div class="card__text-content">
             <p class="card__text">
-              Это было самое начало пути. На этом этапе важно было проникнуться
-              основами и настроиться на учёбу. И, возможно, подумать, как новые
-              знания могут повлиять на ваше будущее.
+              Молотый кофе особенно чувствителен к окислению. Жестяная банка 
+              создаёт идеальный барьер от света, воздуха и влаги, сохраняя 
+              аромат и вкус кофе свежим значительно дольше, чем любая другая упаковка.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний о начале обучения.
+              Герметичная крышка жестяной банки — это гарантия того, что каждая 
+              чашка будет такой же ароматной, как в первый день после открытия.
             </p>
           </div>
           <div class="card__buttons">
-            <button type="button" class="card__icon-button" aria-label="Лайк">
+            <button type="button" class="card__icon-button" aria-label="Поддержать">
               <svg
                 class="like-icon"
                 width="39"
@@ -56,23 +70,27 @@
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <g class="heart">
+                <g class="bean">
+                  <!-- Контур кофейного зерна -->
                   <path
                     class="contour"
-                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    d="M15 3H18V6H15V3ZM12 6H15V9H12V6ZM9 9H12V12H9V9ZM6 12H9V15H6V12ZM6 15H9V18H6V15ZM6 18H9V21H6V18ZM9 21H12V24H9V21ZM12 24H15V27H12V24ZM15 27H18V30H15V27ZM18 30H21V33H18V30ZM21 27H24V30H21V27ZM24 24H27V27H24V24ZM27 21H30V24H27V21ZM30 18H33V21H30V18ZM30 15H33V18H30V15ZM30 12H33V15H30V12ZM27 9H30V12H27V9ZM24 6H27V9H24V6ZM21 3H24V6H21V3ZM18 3H21V6H18V3Z"
                     fill="var(--contour-color)"
                   />
+                  <!-- Основное тело зерна -->
                   <path
                     class="main-body"
-                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    d="M15 6H18V9H15V6ZM12 9H15V12H12V9ZM9 12H12V15H9V12ZM9 15H12V18H9V15ZM9 18H12V21H9V18ZM12 21H15V24H12V21ZM15 24H18V27H15V24ZM18 27H21V30H18V27ZM21 24H24V27H21V24ZM24 21H27V24H24V21ZM27 18H30V21H27V18ZM27 15H30V18H27V15ZM27 12H30V15H27V12ZM24 9H27V12H24V9ZM21 6H24V9H21V6ZM18 6H21V9H18V6Z"
                     fill="transparent"
                   />
+                  <!-- Линия посередине зерна -->
                   <path
                     class="core"
-                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    d="M18 9H21V12H18V9ZM15 12H18V15H15V12ZM15 15H18V18H15V15ZM18 18H21V21H18V18ZM21 21H24V24H21V21Z"
                     fill="transparent"
                   />
                 </g>
+                <!-- Искры/аромат -->
                 <path
                   class="sparks"
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
@@ -81,38 +99,39 @@
               </svg>
             </button>
             <button type="button" class="card__like-button button">
-              <span class="button__text">Like</span>
+              <span class="button__text">Поддержать</span>
             </button>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+        <h2 class="card__title">Экологичность и многоразовое использование</h2>
         <div class="card__image-container">
           <img
-            src="./images/photo-2.jpg"
-            alt="Рабочее место"
+            src="./images/coffee-2.jpeg"
+            alt="Экологичная упаковка"
             class="card__image filter-saturate-hue-rotate"
             loading="lazy"
           >
-          <p class="card__watermark">&lt;/html&gt;</p>
+          <p class="card__watermark">TASTY</p>
         </div>
         <div class="card__content">
           <div class="card__text-content">
             <p class="card__text">
-              На первых этапах мы работали со страхами и сомнениями, которые
-              часто испытывают новички. Один из них — страх перед чистым листом.
-              Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто
-              за этим ощущением скрываются более глубокие вопросы: с чего
-              начать? а вдруг будет слишком сложно? что, если я не справлюсь?
+              Жестяные банки можно использовать бесконечно! После кофе они 
+              превращаются в стильные контейнеры для хранения чая, специй, 
+              круп или мелочей. Это не просто упаковка — это вклад в будущее 
+              нашей планеты.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний о начале первого спринта.
+              Металл полностью перерабатывается, а значит, каждая банка — 
+              это шаг к осознанному потреблению. Tasty Coffee уже заботится 
+              о качестве зёрен, пора позаботиться и об упаковке!
             </p>
           </div>
           <div class="card__buttons">
-            <button type="button" class="card__icon-button" aria-label="Лайк">
+            <button type="button" class="card__icon-button" aria-label="Поддержать">
               <svg
                 class="like-icon"
                 width="39"
@@ -122,23 +141,27 @@
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <g class="heart">
+                <g class="bean">
+                  <!-- Контур кофейного зерна -->
                   <path
                     class="contour"
-                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    d="M15 3H18V6H15V3ZM12 6H15V9H12V6ZM9 9H12V12H9V9ZM6 12H9V15H6V12ZM6 15H9V18H6V15ZM6 18H9V21H6V18ZM9 21H12V24H9V21ZM12 24H15V27H12V24ZM15 27H18V30H15V27ZM18 30H21V33H18V30ZM21 27H24V30H21V27ZM24 24H27V27H24V24ZM27 21H30V24H27V21ZM30 18H33V21H30V18ZM30 15H33V18H30V15ZM30 12H33V15H30V12ZM27 9H30V12H27V9ZM24 6H27V9H24V6ZM21 3H24V6H21V3ZM18 3H21V6H18V3Z"
                     fill="var(--contour-color)"
                   />
+                  <!-- Основное тело зерна -->
                   <path
                     class="main-body"
-                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    d="M15 6H18V9H15V6ZM12 9H15V12H12V9ZM9 12H12V15H9V12ZM9 15H12V18H9V15ZM9 18H12V21H9V18ZM12 21H15V24H12V21ZM15 24H18V27H15V24ZM18 27H21V30H18V27ZM21 24H24V27H21V24ZM24 21H27V24H24V21ZM27 18H30V21H27V18ZM27 15H30V18H27V15ZM27 12H30V15H27V12ZM24 9H27V12H24V9ZM21 6H24V9H21V6ZM18 6H21V9H18V6Z"
                     fill="transparent"
                   />
+                  <!-- Линия посередине зерна -->
                   <path
                     class="core"
-                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    d="M18 9H21V12H18V9ZM15 12H18V15H15V12ZM15 15H18V18H15V15ZM18 18H21V21H18V18ZM21 21H24V24H21V21Z"
                     fill="transparent"
                   />
                 </g>
+                <!-- Искры/аромат -->
                 <path
                   class="sparks"
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
@@ -147,36 +170,37 @@
               </svg>
             </button>
             <button type="button" class="card__like-button button">
-              <span class="button__text">Like</span>
+              <span class="button__text">Поддержать</span>
             </button>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <h2 class="card__title">1 спринт: А если не получится?</h2>
+        <h2 class="card__title">Премиальный внешний вид</h2>
         <div class="card__image-container">
           <img
-            src="./images/photo-3.jpg"
-            alt="Верстаем блок камнями"
+            src="./images/coffee-3.jpeg"
+            alt="Стильный дизайн"
             class="card__image filter-invert-brightness"
             loading="lazy"
           >
-          <p class="card__watermark">&lt;/html&gt;</p>
+          <p class="card__watermark">TASTY</p>
         </div>
         <div class="card__content">
           <div class="card__text-content">
             <p class="card__text">
-              Первый проект — позади! Но это всё ещё самое начало пути. Радость
-              могла быстро померкнуть и смениться ожиданием провала. Или вы,
-              наоборот, могли вдохновиться успехами и поверить в себя.
+              Жестяная банка — это не просто функциональность, это эстетика. 
+              Матовая поверхность, минималистичный дизайн с логотипом Tasty Coffee — 
+              такая упаковка украсит любую кухню и станет частью утреннего ритуала.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний об окончании первого спринта.
+              Качественный кофе заслуживает качественной упаковки. Банка на полке — 
+              это знак того, что вы цените настоящий вкус и стиль.
             </p>
           </div>
           <div class="card__buttons">
-            <button type="button" class="card__icon-button" aria-label="Лайк">
+            <button type="button" class="card__icon-button" aria-label="Поддержать">
               <svg
                 class="like-icon"
                 width="39"
@@ -186,23 +210,27 @@
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <g class="heart">
+                <g class="bean">
+                  <!-- Контур кофейного зерна -->
                   <path
                     class="contour"
-                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    d="M15 3H18V6H15V3ZM12 6H15V9H12V6ZM9 9H12V12H9V9ZM6 12H9V15H6V12ZM6 15H9V18H6V15ZM6 18H9V21H6V18ZM9 21H12V24H9V21ZM12 24H15V27H12V24ZM15 27H18V30H15V27ZM18 30H21V33H18V30ZM21 27H24V30H21V27ZM24 24H27V27H24V24ZM27 21H30V24H27V21ZM30 18H33V21H30V18ZM30 15H33V18H30V15ZM30 12H33V15H30V12ZM27 9H30V12H27V9ZM24 6H27V9H24V6ZM21 3H24V6H21V3ZM18 3H21V6H18V3Z"
                     fill="var(--contour-color)"
                   />
+                  <!-- Основное тело зерна -->
                   <path
                     class="main-body"
-                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    d="M15 6H18V9H15V6ZM12 9H15V12H12V9ZM9 12H12V15H9V12ZM9 15H12V18H9V15ZM9 18H12V21H9V18ZM12 21H15V24H12V21ZM15 24H18V27H15V24ZM18 27H21V30H18V27ZM21 24H24V27H21V24ZM24 21H27V24H24V21ZM27 18H30V21H27V18ZM27 15H30V18H27V15ZM27 12H30V15H27V12ZM24 9H27V12H24V9ZM21 6H24V9H21V6ZM18 6H21V9H18V6Z"
                     fill="transparent"
                   />
+                  <!-- Линия посередине зерна -->
                   <path
                     class="core"
-                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    d="M18 9H21V12H18V9ZM15 12H18V15H15V12ZM15 15H18V18H15V15ZM18 18H21V21H18V18ZM21 21H24V24H21V21Z"
                     fill="transparent"
                   />
                 </g>
+                <!-- Искры/аромат -->
                 <path
                   class="sparks"
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
@@ -211,38 +239,38 @@
               </svg>
             </button>
             <button type="button" class="card__like-button button">
-              <span class="button__text">Like</span>
+              <span class="button__text">Поддержать</span>
             </button>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+        <h2 class="card__title">Удобство хранения и дозирования</h2>
         <div class="card__image-container">
           <img
-            src="./images/photo-4.jpg"
-            alt="Складываем всё как пазл"
+            src="./images/coffee-4.jpeg"
+            alt="Удобное хранение"
             class="card__image filter-sepia-contrast"
             loading="lazy"
           >
-          <p class="card__watermark">&lt;/html&gt;</p>
+          <p class="card__watermark">TASTY</p>
         </div>
         <div class="card__content">
           <div class="card__text-content">
             <p class="card__text">
-              На этом этапе вы уже достаточно разбирались в основах вёрстки,
-              чтобы понять, как много ещё впереди. Вы могли попытаться погнаться
-              за идеалом и понять, что он недостижим. А, может, вы вовсе и не
-              подвержены перфекционизму и вместо того, чтобы сделать идеально,
-              старались просто сделать.
+              Широкое горлышко банки позволяет легко зачерпывать кофе ложкой, 
+              не просыпая ни грамма. Плотная крышка защищает содержимое и легко 
+              открывается без дополнительных усилий.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний о начале второго спринта.
+              Банка устойчива, не занимает много места и идеально помещается 
+              в кухонный шкаф или на полку. Это практичное решение для тех, 
+              кто ценит порядок и удобство.
             </p>
           </div>
           <div class="card__buttons">
-            <button type="button" class="card__icon-button" aria-label="Лайк">
+            <button type="button" class="card__icon-button" aria-label="Поддержать">
               <svg
                 class="like-icon"
                 width="39"
@@ -252,23 +280,27 @@
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <g class="heart">
+                <g class="bean">
+                  <!-- Контур кофейного зерна -->
                   <path
                     class="contour"
-                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    d="M15 3H18V6H15V3ZM12 6H15V9H12V6ZM9 9H12V12H9V9ZM6 12H9V15H6V12ZM6 15H9V18H6V15ZM6 18H9V21H6V18ZM9 21H12V24H9V21ZM12 24H15V27H12V24ZM15 27H18V30H15V27ZM18 30H21V33H18V30ZM21 27H24V30H21V27ZM24 24H27V27H24V24ZM27 21H30V24H27V21ZM30 18H33V21H30V18ZM30 15H33V18H30V15ZM30 12H33V15H30V12ZM27 9H30V12H27V9ZM24 6H27V9H24V6ZM21 3H24V6H21V3ZM18 3H21V6H18V3Z"
                     fill="var(--contour-color)"
                   />
+                  <!-- Основное тело зерна -->
                   <path
                     class="main-body"
-                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    d="M15 6H18V9H15V6ZM12 9H15V12H12V9ZM9 12H12V15H9V12ZM9 15H12V18H9V15ZM9 18H12V21H9V18ZM12 21H15V24H12V21ZM15 24H18V27H15V24ZM18 27H21V30H18V27ZM21 24H24V27H21V24ZM24 21H27V24H24V21ZM27 18H30V21H27V18ZM27 15H30V18H27V15ZM27 12H30V15H27V12ZM24 9H27V12H24V9ZM21 6H24V9H21V6ZM18 6H21V9H18V6Z"
                     fill="transparent"
                   />
+                  <!-- Линия посередине зерна -->
                   <path
                     class="core"
-                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    d="M18 9H21V12H18V9ZM15 12H18V15H15V12ZM15 15H18V18H15V15ZM18 18H21V21H18V18ZM21 21H24V24H21V21Z"
                     fill="transparent"
                   />
                 </g>
+                <!-- Искры/аромат -->
                 <path
                   class="sparks"
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
@@ -277,39 +309,38 @@
               </svg>
             </button>
             <button type="button" class="card__like-button button">
-              <span class="button__text">Like</span>
+              <span class="button__text">Поддержать</span>
             </button>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+        <h2 class="card__title">Защита от внешних факторов</h2>
         <div class="card__image-container">
           <img
-            src="./images/photo-5.jpg"
-            alt="Семьей на природе"
+            src="./images/coffee-5.jpeg"
+            alt="Защита качества"
             class="card__image filter-blur-brightness"
             loading="lazy"
           >
-          <p class="card__watermark">&lt;/html&gt;</p>
+          <p class="card__watermark">TASTY</p>
         </div>
         <div class="card__content">
           <div class="card__text-content">
             <p class="card__text">
-              Всё это время вы были не одиноки (хотя, возможно, иногда и
-              чувствовали, что одни против целого мира). Вас окружали
-              одногруппники, команда сопровождения и просто близкие люди,
-              которым можно пожаловаться, если очередной макет просто так не
-              поддавался. Осваивать что-то новое легче, когда рядом есть
-              единомышленники, не правда ли?
+              Жесть не пропускает свет и не впитывает запахи — два главных врага 
+              молотого кофе. Даже если банка стоит рядом со специями или другими 
+              ароматными продуктами, кофе сохранит свой оригинальный вкус.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний об окончании второго спринта.
+              Прочная конструкция защищает содержимое от случайных повреждений. 
+              Банку можно брать с собой в поездки, не боясь, что упаковка 
+              порвется или помнется.
             </p>
           </div>
           <div class="card__buttons">
-            <button type="button" class="card__icon-button" aria-label="Лайк">
+            <button type="button" class="card__icon-button" aria-label="Поддержать">
               <svg
                 class="like-icon"
                 width="39"
@@ -319,23 +350,27 @@
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <g class="heart">
+                <g class="bean">
+                  <!-- Контур кофейного зерна -->
                   <path
                     class="contour"
-                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    d="M15 3H18V6H15V3ZM12 6H15V9H12V6ZM9 9H12V12H9V9ZM6 12H9V15H6V12ZM6 15H9V18H6V15ZM6 18H9V21H6V18ZM9 21H12V24H9V21ZM12 24H15V27H12V24ZM15 27H18V30H15V27ZM18 30H21V33H18V30ZM21 27H24V30H21V27ZM24 24H27V27H24V24ZM27 21H30V24H27V21ZM30 18H33V21H30V18ZM30 15H33V18H30V15ZM30 12H33V15H30V12ZM27 9H30V12H27V9ZM24 6H27V9H24V6ZM21 3H24V6H21V3ZM18 3H21V6H18V3Z"
                     fill="var(--contour-color)"
                   />
+                  <!-- Основное тело зерна -->
                   <path
                     class="main-body"
-                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    d="M15 6H18V9H15V6ZM12 9H15V12H12V9ZM9 12H12V15H9V12ZM9 15H12V18H9V15ZM9 18H12V21H9V18ZM12 21H15V24H12V21ZM15 24H18V27H15V24ZM18 27H21V30H18V27ZM21 24H24V27H21V24ZM24 21H27V24H24V21ZM27 18H30V21H27V18ZM27 15H30V18H27V15ZM27 12H30V15H27V12ZM24 9H27V12H24V9ZM21 6H24V9H21V6ZM18 6H21V9H18V6Z"
                     fill="transparent"
                   />
+                  <!-- Линия посередине зерна -->
                   <path
                     class="core"
-                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    d="M18 9H21V12H18V9ZM15 12H18V15H15V12ZM15 15H18V18H15V15ZM18 18H21V21H18V18ZM21 21H24V24H21V21Z"
                     fill="transparent"
                   />
                 </g>
+                <!-- Искры/аромат -->
                 <path
                   class="sparks"
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
@@ -344,36 +379,37 @@
               </svg>
             </button>
             <button type="button" class="card__like-button button">
-              <span class="button__text">Like</span>
+              <span class="button__text">Поддержать</span>
             </button>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+        <h2 class="card__title">Долговечность и надежность</h2>
         <div class="card__image-container">
           <img
-            src="./images/photo-6.jpg"
-            alt="Когда большой не удобно есть, можно попробовать маленький"
+            src="./images/coffee-6.jpeg"
+            alt="Надежная упаковка"
             class="card__image filter-hue-rotate-saturate"
             loading="lazy"
           >
-          <p class="card__watermark">&lt;/html&gt;</p>
+          <p class="card__watermark">TASTY</p>
         </div>
         <div class="card__content">
           <div class="card__text-content">
             <p class="card__text">
-              На этом курсе вы постоянно решали разные задачи. В какой-то момент
-              вам могло показаться, что решения просто иссякли. Значит, пришло
-              время посмотреть на задачу под другим углом.
+              Жестяная банка практически вечная. Она не деформируется, не ломается 
+              и не теряет своих свойств со временем. Один раз купив кофе в такой 
+              упаковке, вы получаете контейнер на годы вперед.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний о начале третьего спринта.
+              Это выгодное вложение: банка служит долго, кофе остается свежим, 
+              а вы экономите на дополнительных контейнерах для хранения.
             </p>
           </div>
           <div class="card__buttons">
-            <button type="button" class="card__icon-button" aria-label="Лайк">
+            <button type="button" class="card__icon-button" aria-label="Поддержать">
               <svg
                 class="like-icon"
                 width="39"
@@ -383,23 +419,27 @@
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <g class="heart">
+                <g class="bean">
+                  <!-- Контур кофейного зерна -->
                   <path
                     class="contour"
-                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    d="M15 3H18V6H15V3ZM12 6H15V9H12V6ZM9 9H12V12H9V9ZM6 12H9V15H6V12ZM6 15H9V18H6V15ZM6 18H9V21H6V18ZM9 21H12V24H9V21ZM12 24H15V27H12V24ZM15 27H18V30H15V27ZM18 30H21V33H18V30ZM21 27H24V30H21V27ZM24 24H27V27H24V24ZM27 21H30V24H27V21ZM30 18H33V21H30V18ZM30 15H33V18H30V15ZM30 12H33V15H30V12ZM27 9H30V12H27V9ZM24 6H27V9H24V6ZM21 3H24V6H21V3ZM18 3H21V6H18V3Z"
                     fill="var(--contour-color)"
                   />
+                  <!-- Основное тело зерна -->
                   <path
                     class="main-body"
-                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    d="M15 6H18V9H15V6ZM12 9H15V12H12V9ZM9 12H12V15H9V12ZM9 15H12V18H9V15ZM9 18H12V21H9V18ZM12 21H15V24H12V21ZM15 24H18V27H15V24ZM18 27H21V30H18V27ZM21 24H24V27H21V24ZM24 21H27V24H24V21ZM27 18H30V21H27V18ZM27 15H30V18H27V15ZM27 12H30V15H27V12ZM24 9H27V12H24V9ZM21 6H24V9H21V6ZM18 6H21V9H18V6Z"
                     fill="transparent"
                   />
+                  <!-- Линия посередине зерна -->
                   <path
                     class="core"
-                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    d="M18 9H21V12H18V9ZM15 12H18V15H15V12ZM15 15H18V18H15V15ZM18 18H21V21H18V18ZM21 21H24V24H21V21Z"
                     fill="transparent"
                   />
                 </g>
+                <!-- Искры/аромат -->
                 <path
                   class="sparks"
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
@@ -408,38 +448,37 @@
               </svg>
             </button>
             <button type="button" class="card__like-button button">
-              <span class="button__text">Like</span>
+              <span class="button__text">Поддержать</span>
             </button>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+        <h2 class="card__title">Идеально для подарка</h2>
         <div class="card__image-container">
           <img 
-          src="./images/photo-7.jpg" 
-          alt="На грани" 
+          src="./images/coffee-7.jpeg" 
+          alt="Отличный подарок" 
           class="card__image filter-grayscale" 
           loading="lazy"
           >
-          <p class="card__watermark">&lt;/html&gt;</p>
+          <p class="card__watermark">TASTY</p>
         </div>
         <div class="card__content">
           <div class="card__text-content">
             <p class="card__text">
-              Во время учёбы часто возникает чувство, когда не знаешь, за что
-              хвататься. Вроде и проектную пора сдавать, и задачи хочется
-              порешать, и в теории получше разобраться, и жизнь не забыть
-              пожить. В такие моменты очень нужна концентрация. Вспомните,
-              откуда вы её черпали.
+              Представьте: стильная жестяная банка с качественным кофе от Tasty — 
+              это идеальный подарок для коллег, друзей или близких. Такая упаковка 
+              не требует дополнительной обертки, она уже выглядит презентабельно.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний об окончании третьего спринта.
+              Это подарок с душой: не просто кофе, а целый ритуал — от открытия 
+              красивой банки до аромата свежемолотых зерен в чашке.
             </p>
           </div>
           <div class="card__buttons">
-            <button type="button" class="card__icon-button" aria-label="Лайк">
+            <button type="button" class="card__icon-button" aria-label="Поддержать">
               <svg
                 class="like-icon"
                 width="39"
@@ -449,23 +488,27 @@
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <g class="heart">
+                <g class="bean">
+                  <!-- Контур кофейного зерна -->
                   <path
                     class="contour"
-                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    d="M15 3H18V6H15V3ZM12 6H15V9H12V6ZM9 9H12V12H9V9ZM6 12H9V15H6V12ZM6 15H9V18H6V15ZM6 18H9V21H6V18ZM9 21H12V24H9V21ZM12 24H15V27H12V24ZM15 27H18V30H15V27ZM18 30H21V33H18V30ZM21 27H24V30H21V27ZM24 24H27V27H24V24ZM27 21H30V24H27V21ZM30 18H33V21H30V18ZM30 15H33V18H30V15ZM30 12H33V15H30V12ZM27 9H30V12H27V9ZM24 6H27V9H24V6ZM21 3H24V6H21V3ZM18 3H21V6H18V3Z"
                     fill="var(--contour-color)"
                   />
+                  <!-- Основное тело зерна -->
                   <path
                     class="main-body"
-                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    d="M15 6H18V9H15V6ZM12 9H15V12H12V9ZM9 12H12V15H9V12ZM9 15H12V18H9V15ZM9 18H12V21H9V18ZM12 21H15V24H12V21ZM15 24H18V27H15V24ZM18 27H21V30H18V27ZM21 24H24V27H21V24ZM24 21H27V24H24V21ZM27 18H30V21H27V18ZM27 15H30V18H27V15ZM27 12H30V15H27V12ZM24 9H27V12H24V9ZM21 6H24V9H21V6ZM18 6H21V9H18V6Z"
                     fill="transparent"
                   />
+                  <!-- Линия посередине зерна -->
                   <path
                     class="core"
-                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    d="M18 9H21V12H18V9ZM15 12H18V15H15V12ZM15 15H18V18H15V15ZM18 18H21V21H18V18ZM21 21H24V24H21V21Z"
                     fill="transparent"
                   />
                 </g>
+                <!-- Искры/аромат -->
                 <path
                   class="sparks"
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
@@ -474,40 +517,38 @@
               </svg>
             </button>
             <button type="button" class="card__like-button button">
-              <span class="button__text">Like</span>
+              <span class="button__text">Поддержать</span>
             </button>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <h2 class="card__title">«Сейчас я здесь»</h2>
+        <h2 class="card__title">Поддержите нашу инициативу!</h2>
         <div class="card__image-container">
           <img
-            src="./images/photo-8.jpg"
-            alt="Сетка градиент по верх дочери"
+            src="./images/coffee-8.jpeg"
+            alt="Вместе мы сила"
             class="card__image filter-brightness-saturate-hue-rotate"
             loading="lazy"
           >
-          <p class="card__watermark">&lt;/html&gt;</p>
+          <p class="card__watermark">TASTY</p>
         </div>
         <div class="card__content">
           <div class="card__text-content">
             <p class="card__text">
-              Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
-              Во-первых, впереди ещё много материала про «красотищу». Во-вторых,
-              с окончанием курса учёба не заканчивается. Вёрстка — это целый
-              мир. И этот мир постоянно меняется. Познать его полностью не
-              получится, но это тот случай, когда важен сам процесс познания.
-              Ведь часто путь — и есть результат.
+              Мы верим, что Tasty Coffee способна сделать шаг навстречу своим 
+              покупателям и создать продукт, который будет ещё более качественным, 
+              экологичным и удобным. Жестяные банки для молотого кофе — это не 
+              просто тренд, это необходимость.
             </p>
             <p class="card__text">
-              Место, чтобы остановиться, подумать и написать, что вы чувствуете
-              в этой точке пути.
+              Если вы разделяете нашу позицию, оставьте свои данные в форме ниже. 
+              Вместе мы сможем донести наше мнение до производителя. Каждый голос важен!
             </p>
           </div>
           <div class="card__buttons">
-            <button type="button" class="card__icon-button" aria-label="Лайк">
+            <button type="button" class="card__icon-button" aria-label="Поддержать">
               <svg
                 class="like-icon"
                 width="39"
@@ -517,23 +558,27 @@
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <g class="heart">
+                <g class="bean">
+                  <!-- Контур кофейного зерна -->
                   <path
                     class="contour"
-                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    d="M15 3H18V6H15V3ZM12 6H15V9H12V6ZM9 9H12V12H9V9ZM6 12H9V15H6V12ZM6 15H9V18H6V15ZM6 18H9V21H6V18ZM9 21H12V24H9V21ZM12 24H15V27H12V24ZM15 27H18V30H15V27ZM18 30H21V33H18V30ZM21 27H24V30H21V27ZM24 24H27V27H24V24ZM27 21H30V24H27V21ZM30 18H33V21H30V18ZM30 15H33V18H30V15ZM30 12H33V15H30V12ZM27 9H30V12H27V9ZM24 6H27V9H24V6ZM21 3H24V6H21V3ZM18 3H21V6H18V3Z"
                     fill="var(--contour-color)"
                   />
+                  <!-- Основное тело зерна -->
                   <path
                     class="main-body"
-                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    d="M15 6H18V9H15V6ZM12 9H15V12H12V9ZM9 12H12V15H9V12ZM9 15H12V18H9V15ZM9 18H12V21H9V18ZM12 21H15V24H12V21ZM15 24H18V27H15V24ZM18 27H21V30H18V27ZM21 24H24V27H21V24ZM24 21H27V24H24V21ZM27 18H30V21H27V18ZM27 15H30V18H27V15ZM27 12H30V15H27V12ZM24 9H27V12H24V9ZM21 6H24V9H21V6ZM18 6H21V9H18V6Z"
                     fill="transparent"
                   />
+                  <!-- Линия посередине зерна -->
                   <path
                     class="core"
-                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    d="M18 9H21V12H18V9ZM15 12H18V15H15V12ZM15 15H18V18H15V15ZM18 18H21V21H18V18ZM21 21H24V24H21V21Z"
                     fill="transparent"
                   />
                 </g>
+                <!-- Искры/аромат -->
                 <path
                   class="sparks"
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
@@ -542,32 +587,99 @@
               </svg>
             </button>
             <button type="button" class="card__like-button button">
-              <span class="button__text">Like</span>
+              <span class="button__text">Поддержать</span>
             </button>
           </div>
         </div>
       </article>
-      <button type="button" class="save-memory-button button">
-        <svg width="21" height="21" viewBox="0 0 40 40" aria-hidden="true">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
 
-      <!-- Модальное окно -->
-      <dialog class="memory-dialog">
+      <!-- Форма для сбора единомышленников -->
+      <section class="petition-form-section">
+        <h2 class="form-section__title">Станьте частью движения!</h2>
+        <p class="form-section__description">
+          Оставьте свои данные, и мы передадим их в Tasty Coffee вместе с петицией. 
+          Чем больше нас, тем больше шансов быть услышанными!
+        </p>
+        
+        <form class="petition-form" id="petitionForm">
+          <div class="form-group">
+            <label for="fullname" class="form-label">ФИО <span class="required">*</span></label>
+            <input 
+              type="text" 
+              id="fullname" 
+              name="fullname" 
+              class="form-input" 
+              required
+              placeholder="Иванов Иван Иванович"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email <span class="required">*</span></label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-input" 
+              required
+              placeholder="ivan@example.com"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">Телефон <span class="required">*</span></label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              class="form-input" 
+              required
+              placeholder="+7 (999) 123-45-67"
+            >
+          </div>
+
+          <div class="form-group form-group--checkbox">
+            <label class="checkbox-label">
+              <input 
+                type="checkbox" 
+                id="consent" 
+                name="consent" 
+                class="form-checkbox" 
+                required
+              >
+              <span class="checkbox-text">
+                Я согласен(-на) на обработку персональных данных и получение обратной связи 
+                от компании Tasty Coffee по вопросам данной петиции <span class="required">*</span>
+              </span>
+            </label>
+          </div>
+
+          <button type="submit" class="form-submit-button button">
+            <span class="button__text">Поддержать петицию</span>
+          </button>
+        </form>
+
+        <p class="form-supporters-count">
+          Уже поддержали: <strong id="supportersCount">1,247</strong> единомышленников
+        </p>
+      </section>
+
+      <!-- Модальное окно благодарности -->
+      <dialog class="memory-dialog thank-you-dialog">
         <div class="dialog-content">
           <svg width="39" height="39" viewBox="0 0 40 40" aria-hidden="true">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <p class="dialog-title">вставьте дискету, чтобы продолжить</p>
+          <p class="dialog-title">Спасибо за вашу поддержку!</p>
+          <p class="dialog-text">Ваш голос учтён. Вместе мы изменим мир кофе!</p>
         </div>
         <button type="button" class="dialog-ok-button button">
-          <span class="button__text">ok</span>
+          <span class="button__text">Отлично</span>
         </button>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
     <script src="./scripts/dialog.js"></script>
+    <script src="./scripts/form.js"></script>
   </body>
 </html>

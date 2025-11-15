@@ -8,22 +8,30 @@
   /* Веса вариативного шрифта */
   --main-font-weight: 410;
 
-  /* Градиентный фон страницы */
+  /* Кофейная цветовая палитра */
+  --coffee-dark: #3E2723; /* Темно-коричневый (цвет кофейных зерен) */
+  --coffee-medium: #6D4C41; /* Средний коричневый */
+  --coffee-light: #A1887F; /* Светло-коричневый */
+  --coffee-cream: #EFEBE9; /* Кремовый (цвет молока в кофе) */
+  --coffee-accent: #D84315; /* Терракотовый акцент (как жестяная банка) */
+  --coffee-latte: #BCAAA4; /* Цвет латте */
+
+  /* Градиентный фон страницы - кофейная тематика */
   --page-background: repeating-linear-gradient(
       90deg,
-      #d3d3d3 0,
-      #d3d3d3 2px,
+      #D7CCC8 0,
+      #D7CCC8 2px,
       transparent 2px,
       transparent 4px
     ),
     repeating-linear-gradient(
       180deg,
-      #d3d3d3 0,
-      #d3d3d3 2px,
+      #D7CCC8 0,
+      #D7CCC8 2px,
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+    linear-gradient(180deg, #EFEBE9 0.01%, #4E342E 100%);
 
   /* Резиновые размеры */
   --content-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
@@ -42,20 +50,25 @@
   --watermark-font-size: 0.875rem; /* 14px */
   --card-title-weight: 715; /* 715 */
 
-  /* Акцентный цвет для кнопок */
-  --accent-color: #000000;
+  /* Акцентный цвет для кнопок - кофейный акцент */
+  --accent-color: var(--coffee-dark);
 
   /* Цвета для кнопок */
   --button-text-color: #ffffff;
-  --button-bg-color: #ffffff;
+  --button-bg-color: var(--coffee-cream);
 
   /* Цвет иконки флоппи */
   --floppy-color: #ffffff;
 
-  /* Цвета для анимации сердца */
-  --contour-color: #000000;
-  --animation-fill-color: #ff0000;
+  /* Цвета для анимации сердца - кофейные тона */
+  --contour-color: var(--coffee-dark);
+  --animation-fill-color: var(--coffee-accent);
 
   /* Дополнительные цвета для анимации */
-  --heart-fill-color: #ff0000;
+  --heart-fill-color: var(--coffee-accent);
+
+  /* Цвета для формы */
+  --form-border-color: var(--coffee-medium);
+  --form-focus-color: var(--coffee-accent);
+  --form-error-color: #C62828;
 }

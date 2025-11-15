@@ -1,10 +1,10 @@
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
+✦ like-icon — для svg-иконки анимированного кофейного зерна
+✦ card__like-button — для кнопки "Поддержать" рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ is-liked — для обозначения состояния поддержанной иконки
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
@@ -17,11 +17,12 @@ button {
 
 .button__text {
   font-family: var(--accent-font-family);
-  font-size: 0.875rem; /* 14px */
+  font-size: 0.75rem; /* 12px - уменьшен для лучшего влезания */
   position: relative;
   z-index: 2;
   mix-blend-mode: difference;
   color: var(--button-text-color);
+  white-space: nowrap;
 }
 
 .page {
@@ -49,8 +50,8 @@ button {
   margin-block: var(--header-margin-block);
   margin-inline: auto;
   inline-size: var(--content-width);
-  background-color: white;
-  border: 2px solid black;
+  background-color: var(--coffee-cream);
+  border: 2px solid var(--coffee-dark);
 }
 
 .logo__group {
@@ -65,6 +66,7 @@ button {
   line-height: 1;
   text-transform: uppercase;
   margin-block-end: 20px;
+  text-align: center;
 }
 
 .header__title {
@@ -72,14 +74,48 @@ button {
   font-size: var(--title-size);
   line-height: 1;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.header__subtitle {
+  font-family: var(--main-font-family);
+  font-variation-settings: "wght" var(--main-font-weight);
+  font-size: 0.875rem;
+  margin-block-start: 10px;
+  color: var(--coffee-medium);
+  text-align: center;
 }
 
 /* Основной контент */
 
+/* Вступительная секция */
+.intro-section {
+  background-color: white;
+  border: 2px solid var(--coffee-dark);
+  padding: 25px;
+  margin-block-end: 50px;
+}
+
+.intro__title {
+  font-family: var(--main-font-family);
+  font-variation-settings: "wght" var(--card-title-weight);
+  font-size: var(--card-content-font-size);
+  margin-block-end: 15px;
+  color: var(--coffee-dark);
+}
+
+.intro__text {
+  font-family: var(--main-font-family);
+  font-variation-settings: "wght" var(--main-font-weight);
+  font-size: var(--card-content-font-size);
+  line-height: 1.5;
+  color: var(--coffee-medium);
+}
+
 /* Карточка */
 .card {
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid var(--coffee-dark);
   margin-block-end: 50px;
 }
 
@@ -98,7 +134,7 @@ button {
 /* Контейнер изображения */
 .card__image-container {
   position: relative;
-  border-block: 2px solid black;
+  border-block: 2px solid var(--coffee-dark);
 }
 
 /* Изображение */
@@ -193,7 +229,7 @@ button {
 
 /* Общие стили для кнопок с текстом */
 .button {
-  border: 2px solid black;
+  border: 2px solid var(--coffee-dark);
   transition: box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -224,10 +260,11 @@ button {
   box-shadow: none;
 }
 
-/* Кнопка Like */
+/* Кнопка Поддержать */
 .card__like-button {
-  inline-size: 8.125rem; /* 130px */
+  inline-size: 9.375rem; /* 150px - увеличена для текста "Поддержано" */
   block-size: 2.375rem; /* 38px */
+  padding: 0 8px; /* Добавлен padding для отступа текста от краев */
 }
 
 .card__icon-button {
@@ -235,6 +272,11 @@ button {
   padding: 0;
   transition: border-color 0.3s ease;
   height: 2.375rem; /* 38px */
+  background-color: transparent;
+}
+
+.like-icon {
+  display: block;
 }
 
 .card__icon-button:focus {
@@ -245,14 +287,219 @@ button {
   border-color: var(--accent-color);
 }
 
-/* Кнопка сохранения */
-.save-memory-button {
+/* Форма петиции */
+.petition-form-section {
+  background-color: var(--coffee-cream);
+  border: 2px solid var(--coffee-dark);
+  padding: 40px 25px;
+  margin-block-end: 50px;
+}
+
+.form-section__title {
+  font-family: var(--main-font-family);
+  font-variation-settings: "wght" var(--card-title-weight);
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+  line-height: 1.2;
+  margin-block-end: 15px;
+  color: var(--coffee-dark);
+  text-align: center;
+}
+
+.form-section__description {
+  font-family: var(--main-font-family);
+  font-variation-settings: "wght" var(--main-font-weight);
+  font-size: var(--card-content-font-size);
+  line-height: 1.5;
+  margin-block-end: 30px;
+  text-align: center;
+  color: var(--coffee-medium);
+}
+
+.petition-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-inline-size: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-family: var(--main-font-family);
+  font-variation-settings: "wght" 600;
+  font-size: 0.9375rem;
+  color: var(--coffee-dark);
+}
+
+.required {
+  color: var(--coffee-accent);
+}
+
+.form-input {
+  padding: 12px 16px;
+  border: 2px solid var(--form-border-color);
+  border-radius: 4px;
+  font-family: var(--main-font-family);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--form-focus-color);
+  box-shadow: 0 0 0 3px rgba(216, 67, 21, 0.1);
+}
+
+.form-input:invalid:not(:placeholder-shown) {
+  border-color: var(--form-error-color);
+}
+
+.form-group--checkbox {
+  margin-block-start: 10px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.form-checkbox {
+  inline-size: 20px;
+  block-size: 20px;
+  margin-block-start: 2px;
+  cursor: pointer;
+  flex-shrink: 0;
+  appearance: none;
+  border: 2px solid var(--form-border-color);
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.form-checkbox:checked {
+  background-color: var(--coffee-accent);
+  border-color: var(--coffee-accent);
+}
+
+.form-checkbox:checked::after {
+  content: "✓";
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-checkbox:focus-visible {
+  outline: 2px solid var(--form-focus-color);
+  outline-offset: 2px;
+}
+
+.checkbox-text {
+  font-family: var(--main-font-family);
+  font-variation-settings: "wght" var(--main-font-weight);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--coffee-dark);
+}
+
+.form-submit-button {
+  inline-size: 100%;
+  block-size: 55px;
+  margin-block-start: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--coffee-accent);
+  border-color: var(--coffee-dark);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-submit-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: var(--coffee-dark);
+  transition: left 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.form-submit-button:hover::before {
+  left: 0;
+}
+
+.form-submit-button .button__text {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: difference;
+  color: var(--button-text-color);
+}
+
+.form-submit-button:active {
+  transform: scale(0.98);
+}
+
+.form-submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Анимация отправки формы */
+@keyframes form-submit {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.form-submit-button.submitting {
+  animation: form-submit 0.3s ease;
+  pointer-events: none;
+}
+
+.form-supporters-count {
+  text-align: center;
+  font-family: var(--main-font-family);
+  font-variation-settings: "wght" var(--main-font-weight);
+  font-size: 1rem;
+  margin-block-start: 30px;
+  color: var(--coffee-medium);
+}
+
+.form-supporters-count strong {
+  font-variation-settings: "wght" 700;
+  color: var(--coffee-accent);
+  font-size: 1.125rem;
+}
+
+/* Кнопка сохранения (не используется в текущей версии проекта) */
+/* .save-memory-button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   margin: auto;
-  margin-block-end: 3.75rem; /* 60px */
+  margin-block-end: 3.75rem;
   padding: 8px 16px;
   block-size: 55px;
 }
@@ -262,7 +509,7 @@ button {
   mix-blend-mode: difference;
   position: relative;
   z-index: 2;
-}
+} */
 /* Модальное окно */
 .memory-dialog {
   /* Сброс стандартных браузерных настроек */
@@ -289,7 +536,13 @@ button {
 }
 
 .memory-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(62, 39, 35, 0.85);
+}
+
+.thank-you-dialog .dialog-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .dialog-title {
@@ -298,6 +551,15 @@ button {
   text-transform: uppercase;
   inline-size: clamp(200px, 60vw, 234px);
   line-height: 1.5;
+}
+
+.dialog-text {
+  font-family: var(--main-font-family);
+  font-variation-settings: "wght" var(--main-font-weight);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-block-start: 10px;
+  color: var(--coffee-medium);
 }
 
 /* Размер иконки флоппи в модальном окне */
@@ -337,15 +599,56 @@ button {
     margin-block: 6.25rem; /* 100px для мобильного */
   }
 
-  .save-memory-button {
-    block-size: 5.25rem; /* 84px */
+  .header__subtitle {
+    font-size: 0.75rem;
+  }
+
+  .intro-section {
+    padding: 20px;
+  }
+
+  .intro__title {
+    font-size: 1rem;
+  }
+
+  .intro__text {
+    font-size: 0.9375rem;
+  }
+
+  .petition-form-section {
+    padding: 30px 20px;
+  }
+
+  .form-section__title {
+    font-size: 1.125rem;
+  }
+
+  .form-section__description {
+    font-size: 0.9375rem;
+  }
+
+  .form-input {
+    padding: 10px 12px;
+    font-size: 0.9375rem;
+  }
+
+  .checkbox-text {
+    font-size: 0.875rem;
+  }
+
+  .form-submit-button {
+    block-size: 50px;
+  }
+
+  /* .save-memory-button {
+    block-size: 5.25rem;
     flex-direction: column;
   }
 
   .save-memory-button svg {
-    inline-size: 1.75rem; /* 28px */
-    block-size: 1.75rem; /* 28px */
-  }
+    inline-size: 1.75rem;
+    block-size: 1.75rem;
+  } */
 
   .dialog-ok-button {
     inline-size: 16.3125rem; /* 261px */
@@ -354,5 +657,9 @@ button {
 
   .dialog-content {
     margin: 1.875rem 2.5rem; /* 30px сверху и снизу, 40px слева и справа */
+  }
+
+  .dialog-text {
+    font-size: 0.8125rem;
   }
 }

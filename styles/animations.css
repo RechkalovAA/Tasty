@@ -1,39 +1,39 @@
 /* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
+✦ like-icon — для svg-иконки анимированного кофейного зерна
+✦ card__like-button — для кнопки "Поддержать" рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ is-liked — для обозначения состояния поддержанной иконки в виде зерна
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
 
-/* Группа сердца (core + contour + main-body) */
-.like-icon .heart {
+/* Группа кофейного зерна (core + contour + main-body) */
+.like-icon .bean {
   transition: transform 0.3s ease-in;
-  transform-origin: center; /* Добавляем сюда */
+  transform-origin: center;
 }
 
-/* Контур сердца */
+/* Контур кофейного зерна */
 .like-icon .contour {
   fill: var(--contour-color);
   transition: fill 0.1s linear;
 }
 
-/* Основное тело сердца */
+/* Основное тело кофейного зерна */
 .like-icon .main-body {
   fill: transparent;
   transition: fill 0.3s linear;
 }
 
-/* Сердцевина */
+/* Линия посередине зерна (характерная черта кофейного зерна) */
 .like-icon .core {
   fill: transparent;
   transition: fill 0.3s linear 0.03s;
 }
 
-/* Искры */
+/* Искры/аромат кофе */
 .like-icon .sparks {
   fill: var(--animation-fill-color);
   opacity: 0;
@@ -41,56 +41,56 @@
 
 /* Состояние по умолчанию - все переходы уже настроены выше */
 
-/* Hover состояния */
+/* Hover состояния - показываем линию на зерне */
 .like-icon:hover .core {
-  fill: var(--accent-color); /* Акцентный цвет */
+  fill: var(--coffee-dark); /* Кофейный темный цвет */
   transition-delay: 0s; /* Отменяем задержку 0.03s */
 }
 
 .like-icon:hover .main-body {
-  fill: var(--accent-color); /* Акцентный цвет */
+  fill: var(--coffee-light); /* Светло-коричневый цвет */
   transition-delay: 0.05s; /* Изменяем задержку на 0.05s */
 }
 
-/* Active состояния (при зажатии) */
+/* Active состояния (при зажатии) - зерно обжаривается */
 .like-icon:active .core {
-  fill: var(--heart-fill-color); /* Красный цвет с приоритетом */
+  fill: var(--coffee-accent); /* Терракотовый (обжаренное зерно) */
   transition-delay: 0s; /* Те же настройки, что и при hover */
 }
 
 .like-icon:active .main-body {
-  fill: var(--heart-fill-color); /* Красный цвет с приоритетом */
+  fill: var(--coffee-medium); /* Средний коричневый (обжаренное зерно) */
   transition-delay: 0.05s; /* Те же настройки, что и при hover */
 }
 
-/* Состояние is-liked (при клике) */
+/* Состояние is-liked (при клике) - зерно полностью обжарено */
 .like-icon.is-liked .core {
-  fill: var(--heart-fill-color); /* Красный цвет */
+  fill: var(--coffee-accent); /* Терракотовый (обжаренное зерно) */
   transition-delay: 0s; /* Отменяем задержку 0.03s */
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--heart-fill-color); /* Красный цвет */
+  fill: var(--coffee-dark); /* Темно-коричневый (обжаренное зерно) */
   transition-delay: 0.05s; /* Изменяем задержку на 0.05s */
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--heart-fill-color); /* Красный цвет */
+  fill: var(--coffee-dark); /* Темно-коричневый контур */
   transition: fill 0.3s linear 0.06s; /* Длительность 0.3s, задержка 0.06s */
 }
 
-/* Анимация масштабирования сердца */
-.like-icon.is-liked .heart {
-  animation: heart-scale 0.3s ease-in 0.1s; /* Запуск через 0.1s, длительность 0.3s, ease-in */
+/* Анимация масштабирования кофейного зерна (как будто зерно обжаривается и увеличивается) */
+.like-icon.is-liked .bean {
+  animation: bean-roast 0.3s ease-in 0.1s; /* Запуск через 0.1s, длительность 0.3s, ease-in */
 }
 
-/* Анимация искр */
+/* Анимация аромата кофе (искры превращаются в пар) */
 .like-icon.is-liked .sparks {
-  animation: sparks-flash 0.3s ease-in 0.3s; /* Запуск через 0.3s, длительность 0.3s, ease-in */
+  animation: aroma-rise 0.3s ease-in 0.3s; /* Запуск через 0.3s, длительность 0.3s, ease-in */
 }
 
-/* Keyframes для масштабирования */
-@keyframes heart-scale {
+/* Keyframes для обжарки зерна (масштабирование) */
+@keyframes bean-roast {
   0% {
     transform: scale(1);
   }
@@ -99,8 +99,8 @@
   }
 }
 
-/* Keyframes для вспышки искр */
-@keyframes sparks-flash {
+/* Keyframes для появления аромата кофе */
+@keyframes aroma-rise {
   0% {
     opacity: 0;
   }
